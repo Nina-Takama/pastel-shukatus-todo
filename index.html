@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>就活ToDoリスト</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 就活ToDoリスト</h1>
+        <p class="subtitle">今日の小さな一歩が未来に✨</p>
+
+        <div class="input-area">
+            <input id="taskInput" type="text" placeholder="例：企業説明会に参加" />
+            <select id="categorySelect">
+                <option value="ES">ES</option>
+                <option value="面接">面接</option>
+                <option value="OB訪問">OB訪問</option>
+            </select>
+            <input type="date" id="dateInput" />
+            <button onclick="addTask()">追加</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <img id="catImage" src="nekoko1.png" alt="猫のキャラクター" style="width:150px; cursor:pointer;">
+
+    <script src="script.js"></script>
+</body>
+</html>
